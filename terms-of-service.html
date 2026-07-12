@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service | AstroSync</title>
+    <meta name="description" content="AstroSync Terms of Service for the website, mobile apps, coins, rewarded ads, subscriptions, and acceptable use.">
+    <link rel="canonical" href="https://astrosync.in/terms-of-service.html">
+    <link rel="icon" href="/favicon.ico">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KCZBN5Z8LP"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-KCZBN5Z8LP');
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700;800&family=Space+Grotesk:wght@400;500;600&display=swap');
+
+        /* --- VARIABLES --- */
+        :root {
+            --bg-color: #FFF8F0;
+            --text-color: #1A1A1A;
+            --text-muted: #5F5F5F;
+            --primary: #FF5A5F;
+            --accent: #FFB400;
+            --card-bg: #FFFFFF;
+            --border-radius: 24px;
+            --radius-xl: 32px;
+            --shadow-soft: 0 30px 70px rgba(26, 16, 8, 0.18), inset 0 1px 0 rgba(255, 255, 255, 0.35);
+            --glass-bg: rgba(255, 255, 255, 0.24);
+            --glass-bg-strong: rgba(255, 255, 255, 0.34);
+            --glass-border: rgba(255, 255, 255, 0.45);
+            --glass-border-strong: rgba(255, 255, 255, 0.65);
+            --glass-shadow: 0 30px 70px rgba(20, 12, 8, 0.18), inset 0 1px 0 rgba(255, 255, 255, 0.35);
+            --glass-blur: 22px;
+            --font-main: "Space Grotesk", "Avenir Next", "Gill Sans", sans-serif;
+            --font-display: "Fraunces", "Times New Roman", serif;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        .lang { display: none; }
+        body[data-lang="hi"] .lang-hi { display: inline; }
+        body[data-lang="hi"] .lang-en { display: none; }
+        body[data-lang="en"] .lang-en { display: inline; }
+        body[data-lang="en"] .lang-hi { display: none; }
+
+        body {
+            background-color: var(--bg-color);
+            background-image:
+                radial-gradient(circle at 15% 10%, rgba(255, 196, 115, 0.09), transparent 40%),
+                radial-gradient(circle at 85% 0%, rgba(255, 90, 95, 0.06), transparent 42%),
+                radial-gradient(circle at 80% 80%, rgba(255, 214, 145, 0.07), transparent 44%);
+            color: var(--text-color);
+            font-family: var(--font-main);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        body::before,
+        body::after {
+            content: '';
+            position: fixed;
+            width: 55vw;
+            height: 55vw;
+            border-radius: 50%;
+            filter: blur(70px);
+            opacity: 0.7;
+            z-index: 0;
+            pointer-events: none;
+        }
+
+        body > * {
+            position: relative;
+            z-index: 1;
+        }
+
+        body::before {
+            top: -10vh;
+            left: -15vw;
+            background: radial-gradient(circle, rgba(255, 90, 95, 0.16), transparent 68%);
+        }
+
+        body::after {
+            bottom: -20vh;
+            right: -10vw;
+            background: radial-gradient(circle, rgba(255, 200, 125, 0.19), transparent 62%);
+        }
+
+        h1, h2, h3 {
+            font-family: var(--font-display);
+            letter-spacing: -0.03em;
+            line-height: 1.1;
+            color: #111;
+        }
+
+        p { color: var(--text-muted); }
+
+        .container {
+            max-width: 1120px;
+            margin: 0 auto;
+            padding: 0 24px;
+            width: 100%;
+        }
+
+        nav {
+            padding: 24px 0;
+            position: sticky;
+            top: 0;
+            z-index: 5;
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(18px) saturate(170%);
+            -webkit-backdrop-filter: blur(18px) saturate(170%);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+            box-shadow: 0 14px 40px rgba(20, 12, 8, 0.08);
+        }
+        .nav-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 16px;
+        }
+        .logo {
+            font-weight: 800;
+            font-size: 1.4rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            text-decoration: none;
+            color: #111;
+        }
+        .logo-dot {
+            width: 12px;
+            height: 12px;
+            background: var(--primary);
+            border-radius: 50%;
+        }
+        .nav-actions {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+        .lang-toggle {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            padding: 4px;
+            border-radius: 999px;
+            background: rgba(255, 255, 255, 0.28);
+            border: 1px solid rgba(255, 255, 255, 0.55);
+            box-shadow: 0 10px 24px rgba(20, 12, 8, 0.12), inset 0 1px 0 rgba(255, 255, 255, 0.45);
+            backdrop-filter: blur(var(--glass-blur)) saturate(170%);
+            -webkit-backdrop-filter: blur(var(--glass-blur)) saturate(170%);
+        }
+        .lang-label-short {
+            display: none;
+        }
+        .lang-btn {
+            border: none;
+            background: transparent;
+            padding: 6px 12px;
+            border-radius: 999px;
+            font-weight: 600;
+            font-size: 0.78rem;
+            color: #333;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        .lang-btn.is-active {
+            background: rgba(255, 255, 255, 0.85);
+            color: #111;
+            box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.6), 0 8px 20px rgba(20, 12, 8, 0.12);
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px 20px;
+            border-radius: 100px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            text-decoration: none;
+            border: none;
+            white-space: nowrap;
+            background-color: rgba(255, 255, 255, 0.3);
+            color: #111;
+            border: 1px solid var(--glass-border-strong);
+            box-shadow: 0 14px 30px rgba(20, 12, 8, 0.12), inset 0 1px 0 rgba(255, 255, 255, 0.45);
+            backdrop-filter: blur(var(--glass-blur)) saturate(170%);
+            -webkit-backdrop-filter: blur(var(--glass-blur)) saturate(170%);
+        }
+        .btn:hover {
+            border-color: rgba(255, 255, 255, 0.9);
+        }
+
+        .content-section {
+            padding: 80px 0 100px;
+        }
+
+        .content-card {
+            background: rgba(255, 255, 255, 0.28);
+            border-radius: var(--border-radius);
+            padding: 48px;
+            border: 1px solid rgba(255, 255, 255, 0.55);
+            box-shadow: var(--glass-shadow);
+            backdrop-filter: blur(var(--glass-blur)) saturate(170%);
+            -webkit-backdrop-filter: blur(var(--glass-blur)) saturate(170%);
+            margin-bottom: 40px;
+        }
+
+        .content-card h1 {
+            font-size: clamp(2rem, 4vw, 3rem);
+            margin-bottom: 16px;
+        }
+
+        .content-card .last-updated {
+            font-size: 0.9rem;
+            color: #777;
+            margin-bottom: 32px;
+        }
+
+        .content-card h2 {
+            font-size: 1.5rem;
+            margin-top: 40px;
+            margin-bottom: 16px;
+            color: #111;
+        }
+
+        .content-card h3 {
+            font-size: 1.2rem;
+            margin-top: 28px;
+            margin-bottom: 12px;
+            color: #111;
+        }
+
+        .content-card p {
+            margin-bottom: 16px;
+            line-height: 1.8;
+        }
+
+        .content-card ul, .content-card ol {
+            margin-left: 24px;
+            margin-bottom: 16px;
+            color: var(--text-muted);
+        }
+
+        .content-card li {
+            margin-bottom: 8px;
+            line-height: 1.8;
+        }
+
+        .contact-info {
+            margin-top: 40px;
+            padding: 24px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 16px;
+            border: 1px solid rgba(255, 255, 255, 0.4);
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 20px;
+            }
+            .content-card {
+                padding: 32px 24px;
+            }
+            .nav-inner {
+                flex-direction: row;
+                align-items: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .nav-actions {
+                gap: 8px;
+            }
+            .lang-toggle { padding: 2px; }
+            .lang-btn { padding: 4px 8px; font-size: 0.7rem; }
+            .lang-label-full { display: none; }
+            .lang-label-short { display: inline; }
+            .content-card {
+                padding: 24px 20px;
+            }
+        }
+    </style>
+</head>
+<body data-lang="hi">
+
+    <nav>
+        <div class="container nav-inner">
+            <a href="/" class="logo"><div class="logo-dot"></div> AstroSync</a>
+            <div class="nav-actions">
+                <div class="lang-toggle" role="group" aria-label="Language toggle">
+                    <button class="lang-btn is-active" type="button" data-lang="hi" aria-pressed="true">
+                        <span class="lang-label-full">Hinglish</span>
+                        <span class="lang-label-short" aria-hidden="true">HI</span>
+                    </button>
+                    <button class="lang-btn" type="button" data-lang="en" aria-pressed="false">
+                        <span class="lang-label-full">English</span>
+                        <span class="lang-label-short" aria-hidden="true">EN</span>
+                    </button>
+                </div>
+                <a class="btn" href="/"><span class="lang lang-hi">Home</span><span class="lang lang-en">Home</span></a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="content-section">
+        <div class="container">
+            <div class="content-card">
+                <h1><span class="lang lang-hi">Terms of Use</span><span class="lang lang-en">Terms of Use</span></h1>
+                <p class="last-updated"><span class="lang lang-hi">Last Updated: Apr 30, 2026</span><span class="lang lang-en">Last Updated: Apr 30, 2026</span></p>
+
+                <p><span class="lang lang-hi">Welcome to AstroSync ("AstroSync," "We," "Us," or "Our"). Yeh Terms of Use ("Terms") tumhare AstroSync astrology app aur website ke access aur use ko govern karte hain.</span><span class="lang lang-en">Welcome to AstroSync ("AstroSync," "We," "Us," or "Our"). These Terms of Use ("Terms") govern your access to and use of AstroSync's astrology app and website.</span></p>
+
+                <p><span class="lang lang-hi">AstroSync use karke, tum in Terms ko fully accept karte ho. Agar tum agree nahi karte, to tumhe hamari services use nahi karni chahiye.</span><span class="lang lang-en">By using AstroSync, you agree to these Terms in full. If you do not agree, you must not use our services.</span></p>
+
+                <h2><span class="lang lang-hi">1. Definitions</span><span class="lang lang-en">1. Definitions</span></h2>
+
+                <p><span class="lang lang-hi">Yeh Terms me use kiye gaye terms ka matlab:</span><span class="lang lang-en">The following terms used in these Terms mean:</span></p>
+                <ul>
+                    <li><span class="lang lang-hi"><strong>"User" ya "You"</strong> – Koi bhi entity jo AstroSync ki services subscribe karta hai ya use karta hai.</span><span class="lang lang-en"><strong>"User" or "You"</strong> – Any entity that subscribes to or uses AstroSync's services.</span></li>
+                    <li><span class="lang lang-hi"><strong>"Services"</strong> – AstroSync ka software, including sab related features, updates, support, aur integrations.</span><span class="lang lang-en"><strong>"Services"</strong> – AstroSync's software, including all related features, updates, support, and integrations.</span></li>
+                    <li><span class="lang lang-hi"><strong>"Confidential Information"</strong> – Koi bhi non-public data, records, ya materials jo AstroSync aur User ke beech share hote hain.</span><span class="lang lang-en"><strong>"Confidential Information"</strong> – Any non-public data, records, or materials shared between AstroSync and the User.</span></li>
+                    <li><span class="lang lang-hi"><strong>"User Data"</strong> – Koi bhi information jo AstroSync ke system me enter hoti hai, including birth details, past events, forecasts, aur preferences.</span><span class="lang lang-en"><strong>"User Data"</strong> – Any information entered into AstroSync's system, including birth details, past events, forecasts, and preferences.</span></li>
+                    <li><span class="lang lang-hi"><strong>"Coins"</strong> – AstroSync ke in-app virtual credits jo eligible in-app actions se earn ho sakte hain aur questions ke liye spend ho sakte hain.</span><span class="lang lang-en"><strong>"Coins"</strong> – AstroSync's in-app virtual credits that may be earned through eligible in-app actions and spent on questions.</span></li>
+                    <li><span class="lang lang-hi"><strong>"Rewarded Ads"</strong> – Optional ads jo Android aur iOS native apps me Google AdMob ke through show ho sakte hain aur successful backend verification ke baad Coins grant kar sakte hain.</span><span class="lang lang-en"><strong>"Rewarded Ads"</strong> – Optional ads that may be shown in the Android and iOS native apps through Google AdMob and may grant Coins after successful backend verification.</span></li>
+                </ul>
+
+                <h2><span class="lang lang-hi">2. License & Acceptable Use</span><span class="lang lang-en">2. License & Acceptable Use</span></h2>
+
+                <h3><span class="lang lang-hi">2.1 License Grant</span><span class="lang lang-en">2.1 License Grant</span></h3>
+                <p><span class="lang lang-hi">AstroSync tumhe ek limited, non-exclusive, non-transferable, revocable license deta hai hamari Services ko sirf tumhare personal use ke liye use karne ka.</span><span class="lang lang-en">AstroSync grants you a limited, non-exclusive, non-transferable, revocable license to use our Services solely for your personal use.</span></p>
+
+                <h3><span class="lang lang-hi">2.2 Prohibited Use</span><span class="lang lang-en">2.2 Prohibited Use</span></h3>
+                <p><span class="lang lang-hi">Tumhe yeh karna mana hai:</span><span class="lang lang-en">You must not:</span></p>
+                <ul>
+                    <li><span class="lang lang-hi">Reverse-engineer, modify, copy, ya distribute AstroSync ka software.</span><span class="lang lang-en">Reverse-engineer, modify, copy, or distribute AstroSync's software.</span></li>
+                    <li><span class="lang lang-hi">Login credentials share karo, sublicense, ya hamare software ko resell karo bina prior written approval ke.</span><span class="lang lang-en">Share login credentials, sublicense, or resell our software without prior written approval.</span></li>
+                    <li><span class="lang lang-hi">AstroSync ke platform me koi unlawful, misleading, ya inaccurate information input karo.</span><span class="lang lang-en">Input any unlawful, misleading, or inaccurate information into AstroSync's platform.</span></li>
+                    <li><span class="lang lang-hi">Unauthorized data extraction (scraping), security breaches, ya hacking engage karo.</span><span class="lang lang-en">Engage in unauthorized data extraction (scraping), security breaches, or hacking.</span></li>
+                    <li><span class="lang lang-hi">Coin balances, rewarded ad sessions, server-side verification callbacks, ad transaction IDs, ya reward limits ko tamper, automate, spoof, replay, exploit, ya bypass karo.</span><span class="lang lang-en">Tamper with, automate, spoof, replay, exploit, or bypass coin balances, rewarded ad sessions, server-side verification callbacks, ad transaction IDs, or reward limits.</span></li>
+                    <li><span class="lang lang-hi">AstroSync ko uski intended functionality se beyond purposes ke liye use karo.</span><span class="lang lang-en">Use AstroSync for purposes beyond its intended functionality.</span></li>
+                </ul>
+                <p><span class="lang lang-hi">In terms ka violation services ki immediate termination aur legal action ka result ho sakta hai.</span><span class="lang lang-en">Violation of these terms may result in immediate termination of services and legal action.</span></p>
+
+                <h2><span class="lang lang-hi">3. User Responsibilities</span><span class="lang lang-en">3. User Responsibilities</span></h2>
+
+                <p><span class="lang lang-hi"><strong>Compliance:</strong> Tumhe sab applicable laws comply karni hongi, including India's Digital Personal Data Protection Act (DPDP Act), Information Technology Act, 2000, aur Companies Act.</span><span class="lang lang-en"><strong>Compliance:</strong> You must comply with all applicable laws, including India's Digital Personal Data Protection Act (DPDP Act), Information Technology Act, 2000, and Companies Act.</span></p>
+
+                <p><span class="lang lang-hi"><strong>User Data Accuracy:</strong> Tum fully responsible ho AstroSync me enter kiye gaye sab data ke liye. AstroSync user-provided data ki inaccuracies ke liye responsible nahi hai.</span><span class="lang lang-en"><strong>User Data Accuracy:</strong> You are fully responsible for all data entered into AstroSync. AstroSync is not responsible for inaccuracies in user-provided data.</span></p>
+
+                <p><span class="lang lang-hi"><strong>Security:</strong> Tumhe secure login credentials maintain karni hongi aur kisi bhi unauthorized access ko promptly report karna hoga.</span><span class="lang lang-en"><strong>Security:</strong> You must maintain secure login credentials and promptly report any unauthorized access.</span></p>
+
+                <h2><span class="lang lang-hi">4. Data Protection & Confidentiality</span><span class="lang lang-en">4. Data Protection & Confidentiality</span></h2>
+
+                <h3><span class="lang lang-hi">4.1 Data Ownership</span><span class="lang lang-en">4.1 Data Ownership</span></h3>
+                <p><span class="lang lang-hi">Tum sab User Data ka ownership retain karte ho jo AstroSync me enter hoti hai.</span><span class="lang lang-en">You retain ownership of all User Data entered into AstroSync.</span></p>
+                <p><span class="lang lang-hi">AstroSync analytics aur service improvements ke liye anonymized, aggregated data use kar sakta hai, lekin kabhi bhi client data ko sell ya misuse nahi karega.</span><span class="lang lang-en">AstroSync may use anonymized, aggregated data for analytics and service improvements but will never sell or misuse client data.</span></p>
+
+                <h3><span class="lang lang-hi">4.2 Security Measures</span><span class="lang lang-en">4.2 Security Measures</span></h3>
+                <p><span class="lang lang-hi">AstroSync sab data ko protect karne ke liye best-in-class security protocols employ karta hai (including encryption, firewalls, aur access controls). Lekin, AstroSync absolute security guarantee nahi karta aur external attacks ya client-side vulnerabilities se hone wale breaches ke liye liable nahi hai.</span><span class="lang lang-en">AstroSync employs best-in-class security protocols (including encryption, firewalls, and access controls) to protect all data. However, AstroSync does not guarantee absolute security and is not liable for breaches caused by external attacks or client-side vulnerabilities.</span></p>
+
+                <h3><span class="lang lang-hi">4.3 Confidentiality</span><span class="lang lang-en">4.3 Confidentiality</span></h3>
+                <p><span class="lang lang-hi">Dono parties business operations, technical details, aur user data ke regarding strict confidentiality maintain karne ko agree karte hain.</span><span class="lang lang-en">Both parties agree to maintain strict confidentiality regarding business operations, technical details, and user data.</span></p>
+                <ul>
+                    <li><span class="lang lang-hi">AstroSync Client data ko disclose nahi karega except jab law ke through required ho.</span><span class="lang lang-en">AstroSync will not disclose User data except when required by law.</span></li>
+                    <li><span class="lang lang-hi">User ko AstroSync ke software, features, ya internal processes ke proprietary information ko disclose nahi karni chahiye.</span><span class="lang lang-en">The User must not disclose proprietary information about AstroSync's software, features, or internal processes.</span></li>
+                </ul>
+
+                <h2><span class="lang lang-hi">5. Fees, Billing, Coins & Rewarded Ads</span><span class="lang lang-en">5. Fees, Billing, Coins & Rewarded Ads</span></h2>
+
+                <p><span class="lang lang-hi"><strong>Subscription Fees:</strong> AstroSync ki services ke fees agreed contract ya pricing plan ke according bill hoti hain. Currently, founding beta free hai, lekin future me pricing change ho sakti hai.</span><span class="lang lang-en"><strong>Subscription Fees:</strong> Fees for AstroSync's services are billed as per the agreed contract or pricing plan. Currently, founding beta is free, but pricing may change in the future.</span></p>
+
+                <p><span class="lang lang-hi"><strong>Non-Payment:</strong> Due date ke andar payment na karne par access suspend ya terminate ho sakta hai.</span><span class="lang lang-en"><strong>Non-Payment:</strong> Failure to pay within the due date may result in suspension or termination of access.</span></p>
+
+                <p><span class="lang lang-hi"><strong>Taxes & Compliance:</strong> User sab applicable GST, withholding taxes, ya other government levies ke liye responsible hai.</span><span class="lang lang-en"><strong>Taxes & Compliance:</strong> The User is responsible for all applicable GST, withholding taxes, or other government levies.</span></p>
+
+                <p><span class="lang lang-hi">AstroSync 30 days' notice ke saath pricing adjust karne ka right reserve karta hai.</span><span class="lang lang-en">AstroSync reserves the right to adjust pricing with 30 days' notice.</span></p>
+
+                <h3><span class="lang lang-hi">5.1 Coins</span><span class="lang lang-en">5.1 Coins</span></h3>
+                <p><span class="lang lang-hi">Coins AstroSync ke internal virtual credits hain. Coins ka koi cash value nahi hai, woh legal tender nahi hain, transferable nahi hain, aur cash, gift cards, ya kisi external value ke liye redeem nahi kiye ja sakte.</span><span class="lang lang-en">Coins are AstroSync's internal virtual credits. Coins have no cash value, are not legal tender, are not transferable, and cannot be redeemed for cash, gift cards, or any external value.</span></p>
+                <p><span class="lang lang-hi">AstroSync backend coin balance ka source of truth hai. User ke device par shown balance temporary, delayed, ya stale ho sakta hai jab tak backend se refresh nahi hota.</span><span class="lang lang-en">AstroSync's backend is the source of truth for coin balances. The balance shown on a user's device may be temporary, delayed, or stale until refreshed from the backend.</span></p>
+                <p><span class="lang lang-hi">Coins eligible actions ke liye grant ho sakte hain, including rewarded ads watch karna, streak count increase hona, daily ya quest questions answer karna, signup bonus, ya other promotional grants. Coin earn rates, spend rates, eligibility, limits, aur availability AstroSync kabhi bhi change, suspend, ya discontinue kar sakta hai.</span><span class="lang lang-en">Coins may be granted for eligible actions, including watching rewarded ads, increasing a streak count, answering daily or quest questions, signup bonuses, or other promotional grants. AstroSync may change, suspend, or discontinue coin earn rates, spend rates, eligibility, limits, and availability at any time.</span></p>
+                <p><span class="lang lang-hi">Questions ask karne ke liye Coins cost ho sakte hain. Agar question backend me failure status par move hota hai, AstroSync eligible coin refund automatically process kar sakta hai. Refunds sirf backend records ke basis par process honge.</span><span class="lang lang-en">Asking questions may cost Coins. If a question moves to failure status in the backend, AstroSync may automatically process the eligible coin refund. Refunds are processed only according to backend records.</span></p>
+
+                <h3><span class="lang lang-hi">5.2 Rewarded Ads</span><span class="lang lang-en">5.2 Rewarded Ads</span></h3>
+                <p><span class="lang lang-hi">Rewarded Ads optional hain aur sirf Android aur iOS native apps me available hain. Rewarded Ads website ya web app par available nahi hain. Ads ki availability Google AdMob, network, device, region, consent settings, aur fraud-prevention systems par depend kar sakti hai.</span><span class="lang lang-en">Rewarded Ads are optional and available only in the Android and iOS native apps. Rewarded Ads are not available on the website or web app. Ad availability may depend on Google AdMob, network, device, region, consent settings, and fraud-prevention systems.</span></p>
+                <p><span class="lang lang-hi">Rewarded Ad dekhne ke baad Coins sirf tab grant hote hain jab Google AdMob server-side verification callback hamare backend par successfully verify hota hai. App me "reward granted" message dikhna final backend credit guarantee nahi karta.</span><span class="lang lang-en">After watching a Rewarded Ad, Coins are granted only when the Google AdMob server-side verification callback is successfully verified by our backend. Seeing a "reward granted" message in the app does not guarantee final backend credit.</span></p>
+                <p><span class="lang lang-hi">Daily rewarded ad limits backend se configurable hain aur midnight IST par refresh hote hain, unless app me ya backend response me otherwise specify kiya ho. AstroSync abuse, fraud, duplicate callbacks, invalid signatures, mismatched sessions, ya policy violations detect hone par rewards deny, reverse, ya withhold kar sakta hai.</span><span class="lang lang-en">Daily rewarded ad limits are configurable by the backend and refresh at midnight IST unless otherwise specified in the app or backend response. AstroSync may deny, reverse, or withhold rewards if it detects abuse, fraud, duplicate callbacks, invalid signatures, mismatched sessions, or policy violations.</span></p>
+                <p><span class="lang lang-hi">Rewarded Ads Google AdMob ke through serve hote hain. Tumhara Rewarded Ads ka use Google ke applicable policies, ad controls, aur privacy practices ke under bhi aa sakta hai.</span><span class="lang lang-en">Rewarded Ads are served through Google AdMob. Your use of Rewarded Ads may also be subject to Google's applicable policies, ad controls, and privacy practices.</span></p>
+
+                <h2><span class="lang lang-hi">6. Intellectual Property Rights</span><span class="lang lang-en">6. Intellectual Property Rights</span></h2>
+
+                <p><span class="lang lang-hi"><strong>AstroSync Retains Ownership:</strong> Sab software, branding, algorithms, aur documentation 100% AstroSync ki intellectual property remain karti hai.</span><span class="lang lang-en"><strong>AstroSync Retains Ownership:</strong> All software, branding, algorithms, and documentation remain 100% the intellectual property of AstroSync.</span></p>
+
+                <p><span class="lang lang-hi"><strong>No User Rights Over Software:</strong> Users contract termination ke baad bhi AstroSync ke software ke kisi bhi aspect par ownership ya IP rights acquire nahi karte.</span><span class="lang lang-en"><strong>No User Rights Over Software:</strong> Users do not acquire ownership or IP rights over any aspect of AstroSync's software, even after contract termination.</span></p>
+
+                <p><span class="lang lang-hi"><strong>Feedback & Suggestions:</strong> Users dwara provide kiye gaye koi bhi ideas ya feature requests AstroSync dwara bina obligation ya compensation ke use kiye ja sakte hain.</span><span class="lang lang-en"><strong>Feedback & Suggestions:</strong> Any ideas or feature requests provided by Users may be used by AstroSync without obligation or compensation.</span></p>
+
+                <h2><span class="lang lang-hi">7. Service Levels & Availability</span><span class="lang lang-en">7. Service Levels & Availability</span></h2>
+
+                <p><span class="lang lang-hi"><strong>Uptime Commitment:</strong> AstroSync 99.5% uptime ka aim karta hai, except scheduled maintenance ke during.</span><span class="lang lang-en"><strong>Uptime Commitment:</strong> AstroSync aims for 99.5% uptime, except during scheduled maintenance.</span></p>
+
+                <p><span class="lang lang-hi"><strong>No Guaranteed Performance:</strong> AstroSync uninterrupted service guarantee nahi karta aur external factors (e.g., internet failures, cyberattacks, force majeure) se hone wale downtime ke liye liable nahi hai.</span><span class="lang lang-en"><strong>No Guaranteed Performance:</strong> AstroSync does not guarantee uninterrupted service and is not liable for downtime due to external factors (e.g., internet failures, cyberattacks, force majeure).</span></p>
+
+                <p><span class="lang lang-hi"><strong>Support & Maintenance:</strong> Technical support hello@astrosync.in par email ya in-app helpdesk ke through standard business hours me available hai.</span><span class="lang lang-en"><strong>Support & Maintenance:</strong> Technical support is available through hello@astrosync.in or via in-app helpdesk during standard business hours.</span></p>
+
+                <h2><span class="lang lang-hi">8. Limitation of Liability & Indemnification</span><span class="lang lang-en">8. Limitation of Liability & Indemnification</span></h2>
+
+                <h3><span class="lang lang-hi">8.1 AstroSync's Limited Liability</span><span class="lang lang-en">8.1 AstroSync's Limited Liability</span></h3>
+                <p><span class="lang lang-hi">Law ke maximum extent permitted tak:</span><span class="lang lang-en">To the maximum extent permitted by law:</span></p>
+                <ul>
+                    <li><span class="lang lang-hi">AstroSync kisi bhi indirect, incidental, consequential, ya punitive damages ke liye liable nahi hai, including revenue, data, ya business opportunities ka loss.</span><span class="lang lang-en">AstroSync is not liable for any indirect, incidental, consequential, or punitive damages, including loss of revenue, data, or business opportunities.</span></li>
+                    <li><span class="lang lang-hi">AstroSync ki total liability kisi bhi claim ke liye last 6 months me User dwara paid amount tak limited hai.</span><span class="lang lang-en">AstroSync's total liability for any claim is limited to the amount paid by the User in the last 6 months.</span></li>
+                </ul>
+
+                <h3><span class="lang lang-hi">8.2 Indemnification by User</span><span class="lang lang-en">8.2 Indemnification by User</span></h3>
+                <p><span class="lang lang-hi">User agree karta hai ki AstroSync ko kisi bhi claims, losses, ya damages se indemnify, defend, aur hold harmless karega jo arise hote hain:</span><span class="lang lang-en">The User agrees to indemnify, defend, and hold harmless AstroSync from any claims, losses, or damages arising from:</span></p>
+                <ul>
+                    <li><span class="lang lang-hi">Services ka misuse, including laws ke saath non-compliance.</span><span class="lang lang-en">Misuse of Services, including non-compliance with laws.</span></li>
+                    <li><span class="lang lang-hi">User data ka unauthorized use.</span><span class="lang lang-en">Unauthorized use of user data.</span></li>
+                    <li><span class="lang lang-hi">Client-side negligence se hone wale security breaches.</span><span class="lang lang-en">Security breaches caused by User-side negligence.</span></li>
+                </ul>
+
+                <h2><span class="lang lang-hi">9. Termination & Suspension</span><span class="lang lang-en">9. Termination & Suspension</span></h2>
+
+                <h3><span class="lang lang-hi">9.1 Termination by User</span><span class="lang lang-en">9.1 Termination by User</span></h3>
+                <p><span class="lang lang-hi">Users apni subscription ko 30 days' prior notice ke saath terminate kar sakte hain, unke service agreement ke according.</span><span class="lang lang-en">Users may terminate their subscription with 30 days' prior notice, as per their service agreement.</span></p>
+                <p><span class="lang lang-hi">Prepaid subscriptions ke unused portions ke liye refunds provide nahi kiye jate.</span><span class="lang lang-en">Refunds are not provided for unused portions of prepaid subscriptions.</span></p>
+
+                <h3><span class="lang lang-hi">9.2 Termination by AstroSync</span><span class="lang lang-en">9.2 Termination by AstroSync</span></h3>
+                <p><span class="lang lang-hi">Hum immediately terminate ya suspend karne ka right reserve karte hain agar:</span><span class="lang lang-en">We reserve the right to immediately terminate or suspend services if:</span></p>
+                <ul>
+                    <li><span class="lang lang-hi">User in Terms ko violate karta hai.</span><span class="lang lang-en">The User violates these Terms.</span></li>
+                    <li><span class="lang lang-hi">User payments nahi karta.</span><span class="lang lang-en">The User fails to make payments.</span></li>
+                    <li><span class="lang lang-hi">AstroSync operations cease karta hai ya services discontinue karta hai.</span><span class="lang lang-en">AstroSync ceases operations or discontinues services.</span></li>
+                </ul>
+
+                <h3><span class="lang lang-hi">9.3 Data Retention & Deletion</span><span class="lang lang-en">9.3 Data Retention & Deletion</span></h3>
+                <p><span class="lang lang-hi">Termination ke baad, User data permanently delete hone se pehle 30 days ke liye retain kiya jata hai.</span><span class="lang lang-en">Upon termination, User data is retained for 30 days before being permanently deleted.</span></p>
+                <p><span class="lang lang-hi">Users deletion se pehle data export request kar sakte hain, subject to processing fees.</span><span class="lang lang-en">Users may request a data export before deletion, subject to processing fees.</span></p>
+
+                <h2><span class="lang lang-hi">10. Compliance with Indian Laws</span><span class="lang lang-en">10. Compliance with Indian Laws</span></h2>
+
+                <p><span class="lang lang-hi">Users ko ensure karna hoga ki sab usage Indian laws ke saath compliant hai, including:</span><span class="lang lang-en">Users must ensure all usage is compliant with Indian laws, including:</span></p>
+                <ul>
+                    <li><span class="lang lang-hi">Digital Personal Data Protection (DPDP) Act, 2023</span><span class="lang lang-en">Digital Personal Data Protection (DPDP) Act, 2023</span></li>
+                    <li><span class="lang lang-hi">Information Technology Act, 2000 (data protection ke liye)</span><span class="lang lang-en">Information Technology Act, 2000 (for data protection)</span></li>
+                    <li><span class="lang lang-hi">Companies Act, 2013</span><span class="lang lang-en">Companies Act, 2013</span></li>
+                    <li><span class="lang lang-hi">FEMA & RBI regulations (international payments ke liye)</span><span class="lang lang-en">FEMA & RBI regulations (for international payments)</span></li>
+                </ul>
+                <p><span class="lang lang-hi">Koi bhi legal disputes Gurgaon, Haryana ke courts ki jurisdiction ke under resolve honge.</span><span class="lang lang-en">Any legal disputes will be resolved under the jurisdiction of the courts of Gurgaon, Haryana.</span></p>
+
+                <h2><span class="lang lang-hi">11. Changes to These Terms</span><span class="lang lang-en">11. Changes to These Terms</span></h2>
+
+                <p><span class="lang lang-hi">AstroSync periodically in Terms ko update kar sakta hai. Users ko material changes ke baare me email ya in-app notifications ke through notify kiya jayega. Updates ke baad services ka continued use naye Terms ki acceptance constitute karta hai.</span><span class="lang lang-en">AstroSync may update these Terms periodically. Users will be notified of material changes via email or in-app notifications. Continued use of services after updates constitutes acceptance of the new Terms.</span></p>
+
+                <h2><span class="lang lang-hi">12. Contact Information</span><span class="lang lang-en">12. Contact Information</span></h2>
+
+                <p><span class="lang lang-hi">Kisi bhi legal, technical, ya billing inquiries ke liye, please contact:</span><span class="lang lang-en">For any legal, technical, or billing inquiries, please contact:</span></p>
+                <ul>
+                    <li><span class="lang lang-hi">📧 Email: <a href="mailto:hello@astrosync.in" style="color: var(--primary);">hello@astrosync.in</a></span><span class="lang lang-en">📧 Email: <a href="mailto:hello@astrosync.in" style="color: var(--primary);">hello@astrosync.in</a></span></li>
+                    <li><span class="lang lang-hi">🌐 Website: <a href="https://astrosync.in" style="color: var(--primary);">astrosync.in</a></span><span class="lang lang-en">🌐 Website: <a href="https://astrosync.in" style="color: var(--primary);">astrosync.in</a></span></li>
+                </ul>
+
+                <div class="contact-info" style="margin-top: 40px;">
+                    <p><strong><span class="lang lang-hi">Acknowledgment & Agreement</span><span class="lang lang-en">Acknowledgment & Agreement</span></strong></p>
+                    <p><span class="lang lang-hi">AstroSync use karke, tum confirm karte ho ki tumne in Terms of Service ko read, understand, aur agree kiya hai.</span><span class="lang lang-en">By using AstroSync, you confirm that you have read, understood, and agreed to these Terms of Service.</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const titleByLang = {
+            hi: 'Terms of Service | AstroSync',
+            en: 'Terms of Service | AstroSync'
+        };
+
+        const langButtons = document.querySelectorAll('.lang-btn');
+
+        const setLanguage = (lang) => {
+            document.body.setAttribute('data-lang', lang);
+            document.documentElement.lang = lang === 'en' ? 'en' : 'hi';
+            if (titleByLang[lang]) {
+                document.title = titleByLang[lang];
+            }
+            langButtons.forEach((button) => {
+                const isActive = button.dataset.lang === lang;
+                button.classList.toggle('is-active', isActive);
+                button.setAttribute('aria-pressed', isActive ? 'true' : 'false');
+            });
+        };
+
+        langButtons.forEach((button) => {
+            button.addEventListener('click', () => {
+                setLanguage(button.dataset.lang);
+            });
+        });
+
+        setLanguage(document.body.getAttribute('data-lang') || 'hi');
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,4 @@
+.DS_Store
+.tmp/
+amplify-deploy.json
+amplify-deploy.zip

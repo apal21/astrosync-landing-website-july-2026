@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy | AstroSync</title>
+    <meta name="description" content="AstroSync Privacy Policy covering the website, mobile apps, rewarded ads, coin wallet, analytics, and personal data rights.">
+    <link rel="canonical" href="https://astrosync.in/privacy-policy.html">
+    <link rel="icon" href="/favicon.ico">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KCZBN5Z8LP"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-KCZBN5Z8LP');
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700;800&family=Space+Grotesk:wght@400;500;600&display=swap');
+
+        /* --- VARIABLES --- */
+        :root {
+            --bg-color: #FFF8F0;
+            --text-color: #1A1A1A;
+            --text-muted: #5F5F5F;
+            --primary: #FF5A5F;
+            --accent: #FFB400;
+            --card-bg: #FFFFFF;
+            --border-radius: 24px;
+            --radius-xl: 32px;
+            --shadow-soft: 0 30px 70px rgba(26, 16, 8, 0.18), inset 0 1px 0 rgba(255, 255, 255, 0.35);
+            --glass-bg: rgba(255, 255, 255, 0.24);
+            --glass-bg-strong: rgba(255, 255, 255, 0.34);
+            --glass-border: rgba(255, 255, 255, 0.45);
+            --glass-border-strong: rgba(255, 255, 255, 0.65);
+            --glass-shadow: 0 30px 70px rgba(20, 12, 8, 0.18), inset 0 1px 0 rgba(255, 255, 255, 0.35);
+            --glass-blur: 22px;
+            --font-main: "Space Grotesk", "Avenir Next", "Gill Sans", sans-serif;
+            --font-display: "Fraunces", "Times New Roman", serif;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        .lang { display: none; }
+        body[data-lang="hi"] .lang-hi { display: inline; }
+        body[data-lang="hi"] .lang-en { display: none; }
+        body[data-lang="en"] .lang-en { display: inline; }
+        body[data-lang="en"] .lang-hi { display: none; }
+
+        body {
+            background-color: var(--bg-color);
+            background-image:
+                radial-gradient(circle at 15% 10%, rgba(255, 196, 115, 0.09), transparent 40%),
+                radial-gradient(circle at 85% 0%, rgba(255, 90, 95, 0.06), transparent 42%),
+                radial-gradient(circle at 80% 80%, rgba(255, 214, 145, 0.07), transparent 44%);
+            color: var(--text-color);
+            font-family: var(--font-main);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        body::before,
+        body::after {
+            content: '';
+            position: fixed;
+            width: 55vw;
+            height: 55vw;
+            border-radius: 50%;
+            filter: blur(70px);
+            opacity: 0.7;
+            z-index: 0;
+            pointer-events: none;
+        }
+
+        body > * {
+            position: relative;
+            z-index: 1;
+        }
+
+        body::before {
+            top: -10vh;
+            left: -15vw;
+            background: radial-gradient(circle, rgba(255, 90, 95, 0.16), transparent 68%);
+        }
+
+        body::after {
+            bottom: -20vh;
+            right: -10vw;
+            background: radial-gradient(circle, rgba(255, 200, 125, 0.19), transparent 62%);
+        }
+
+        h1, h2, h3 {
+            font-family: var(--font-display);
+            letter-spacing: -0.03em;
+            line-height: 1.1;
+            color: #111;
+        }
+
+        p { color: var(--text-muted); }
+
+        .container {
+            max-width: 1120px;
+            margin: 0 auto;
+            padding: 0 24px;
+            width: 100%;
+        }
+
+        nav {
+            padding: 24px 0;
+            position: sticky;
+            top: 0;
+            z-index: 5;
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(18px) saturate(170%);
+            -webkit-backdrop-filter: blur(18px) saturate(170%);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+            box-shadow: 0 14px 40px rgba(20, 12, 8, 0.08);
+        }
+        .nav-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 16px;
+        }
+        .logo {
+            font-weight: 800;
+            font-size: 1.4rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            text-decoration: none;
+            color: #111;
+        }
+        .logo-dot {
+            width: 12px;
+            height: 12px;
+            background: var(--primary);
+            border-radius: 50%;
+        }
+        .nav-actions {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+        .lang-toggle {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            padding: 4px;
+            border-radius: 999px;
+            background: rgba(255, 255, 255, 0.28);
+            border: 1px solid rgba(255, 255, 255, 0.55);
+            box-shadow: 0 10px 24px rgba(20, 12, 8, 0.12), inset 0 1px 0 rgba(255, 255, 255, 0.45);
+            backdrop-filter: blur(var(--glass-blur)) saturate(170%);
+            -webkit-backdrop-filter: blur(var(--glass-blur)) saturate(170%);
+        }
+        .lang-label-short {
+            display: none;
+        }
+        .lang-btn {
+            border: none;
+            background: transparent;
+            padding: 6px 12px;
+            border-radius: 999px;
+            font-weight: 600;
+            font-size: 0.78rem;
+            color: #333;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        .lang-btn.is-active {
+            background: rgba(255, 255, 255, 0.85);
+            color: #111;
+            box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.6), 0 8px 20px rgba(20, 12, 8, 0.12);
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px 20px;
+            border-radius: 100px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            text-decoration: none;
+            border: none;
+            white-space: nowrap;
+            background-color: rgba(255, 255, 255, 0.3);
+            color: #111;
+            border: 1px solid var(--glass-border-strong);
+            box-shadow: 0 14px 30px rgba(20, 12, 8, 0.12), inset 0 1px 0 rgba(255, 255, 255, 0.45);
+            backdrop-filter: blur(var(--glass-blur)) saturate(170%);
+            -webkit-backdrop-filter: blur(var(--glass-blur)) saturate(170%);
+        }
+        .btn:hover {
+            border-color: rgba(255, 255, 255, 0.9);
+        }
+
+        .content-section {
+            padding: 80px 0 100px;
+        }
+
+        .content-card {
+            background: rgba(255, 255, 255, 0.28);
+            border-radius: var(--border-radius);
+            padding: 48px;
+            border: 1px solid rgba(255, 255, 255, 0.55);
+            box-shadow: var(--glass-shadow);
+            backdrop-filter: blur(var(--glass-blur)) saturate(170%);
+            -webkit-backdrop-filter: blur(var(--glass-blur)) saturate(170%);
+            margin-bottom: 40px;
+        }
+
+        .content-card h1 {
+            font-size: clamp(2rem, 4vw, 3rem);
+            margin-bottom: 16px;
+        }
+
+        .content-card .last-updated {
+            font-size: 0.9rem;
+            color: #777;
+            margin-bottom: 32px;
+        }
+
+        .content-card h2 {
+            font-size: 1.5rem;
+            margin-top: 40px;
+            margin-bottom: 16px;
+            color: #111;
+        }
+
+        .content-card h3 {
+            font-size: 1.2rem;
+            margin-top: 28px;
+            margin-bottom: 12px;
+            color: #111;
+        }
+
+        .content-card p {
+            margin-bottom: 16px;
+            line-height: 1.8;
+        }
+
+        .content-card ul, .content-card ol {
+            margin-left: 24px;
+            margin-bottom: 16px;
+            color: var(--text-muted);
+        }
+
+        .content-card li {
+            margin-bottom: 8px;
+            line-height: 1.8;
+        }
+
+        .contact-info {
+            margin-top: 40px;
+            padding: 24px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 16px;
+            border: 1px solid rgba(255, 255, 255, 0.4);
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 20px;
+            }
+            .content-card {
+                padding: 32px 24px;
+            }
+            .nav-inner {
+                flex-direction: row;
+                align-items: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .nav-actions {
+                gap: 8px;
+            }
+            .lang-toggle { padding: 2px; }
+            .lang-btn { padding: 4px 8px; font-size: 0.7rem; }
+            .lang-label-full { display: none; }
+            .lang-label-short { display: inline; }
+            .content-card {
+                padding: 24px 20px;
+            }
+        }
+    </style>
+</head>
+<body data-lang="hi">
+
+    <nav>
+        <div class="container nav-inner">
+            <a href="/" class="logo"><div class="logo-dot"></div> AstroSync</a>
+            <div class="nav-actions">
+                <div class="lang-toggle" role="group" aria-label="Language toggle">
+                    <button class="lang-btn is-active" type="button" data-lang="hi" aria-pressed="true">
+                        <span class="lang-label-full">Hinglish</span>
+                        <span class="lang-label-short" aria-hidden="true">HI</span>
+                    </button>
+                    <button class="lang-btn" type="button" data-lang="en" aria-pressed="false">
+                        <span class="lang-label-full">English</span>
+                        <span class="lang-label-short" aria-hidden="true">EN</span>
+                    </button>
+                </div>
+                <a class="btn" href="/"><span class="lang lang-hi">Home</span><span class="lang lang-en">Home</span></a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="content-section">
+        <div class="container">
+            <div class="content-card">
+                <h1><span class="lang lang-hi">Privacy Policy</span><span class="lang lang-en">Privacy Policy</span></h1>
+                <p class="last-updated"><span class="lang lang-hi">Last Updated: Apr 30, 2026</span><span class="lang lang-en">Last Updated: Apr 30, 2026</span></p>
+
+                <p><span class="lang lang-hi">Yeh Privacy Policy explain karti hai ki AstroSync ("AstroSync," "we," "us," ya "our") tumhari personal information ko kaise collect, use, share, aur protect karta hai jab tum hamari services ("Services") use karte ho, including hamari website https://astrosync.in, Android app, iOS app, rewarded ads, aur in-app coin wallet use karna ya sales, marketing, ya events ke through interact karna.</span><span class="lang lang-en">This Privacy Policy explains how AstroSync ("AstroSync," "we," "us," or "our") collects, uses, shares, and protects your personal information when you use our services ("Services"), including visiting our website https://astrosync.in, using our Android app, iOS app, rewarded ads, and in-app coin wallet, or interacting with us through other means such as sales, marketing, or events.</span></p>
+
+                <p><span class="lang lang-hi">Hamari Services access ya use karke, tum acknowledge karte ho ki tumne is Privacy Policy ko read, understand, aur agree kiya hai. Agar tum agree nahi karte, to please hamari Services use mat karo.</span><span class="lang lang-en">By accessing or using our Services, you acknowledge that you have read, understood, and agreed to this Privacy Policy. If you do not agree, please do not use our Services.</span></p>
+
+                <h2><span class="lang lang-hi">1. INFORMATION WE COLLECT</span><span class="lang lang-en">1. INFORMATION WE COLLECT</span></h2>
+
+                <h3><span class="lang lang-hi">A. Information You Provide to Us</span><span class="lang lang-en">A. Information You Provide to Us</span></h3>
+                <p><span class="lang lang-hi">Hum personal information collect karte hain jo tum voluntarily provide karte ho, including:</span><span class="lang lang-en">We collect personal information that you voluntarily provide, including:</span></p>
+                <ul>
+                    <li><span class="lang lang-hi"><strong>Identity Information:</strong> Name, email address, phone number, username, mailing aur billing addresses.</span><span class="lang lang-en"><strong>Identity Information:</strong> Name, email address, phone number, username, mailing and billing addresses.</span></li>
+                    <li><span class="lang lang-hi"><strong>Account Credentials:</strong> Usernames, passwords, aur other authentication details.</span><span class="lang lang-en"><strong>Account Credentials:</strong> Usernames, passwords, and other authentication details.</span></li>
+                    <li><span class="lang lang-hi"><strong>Birth Details:</strong> Date of birth, time of birth, aur birth location - astrology calculations ke liye zaroori.</span><span class="lang lang-en"><strong>Birth Details:</strong> Date of birth, time of birth, and birth location - required for astrology calculations.</span></li>
+                    <li><span class="lang lang-hi"><strong>Life Events Data:</strong> Past life events (yes/no responses) jo model training ke liye use hote hain.</span><span class="lang lang-en"><strong>Life Events Data:</strong> Past life events (yes/no responses) used for model training.</span></li>
+                    <li><span class="lang lang-hi"><strong>Coin Wallet and Reward Data:</strong> Coin balance, coin ledger entries, question spend events, refunds, streak rewards, daily ya quest answer rewards, rewarded ad sessions, ad reward callbacks, transaction IDs, daily ad limit counts, aur reset timestamps.</span><span class="lang lang-en"><strong>Coin Wallet and Reward Data:</strong> Coin balance, coin ledger entries, question spend events, refunds, streak rewards, daily or quest answer rewards, rewarded ad sessions, ad reward callbacks, transaction IDs, daily ad limit counts, and reset timestamps.</span></li>
+                    <li><span class="lang lang-hi"><strong>Payment Details:</strong> Transactional data jab tum purchase karte ho (securely processed by third-party payment providers).</span><span class="lang lang-en"><strong>Payment Details:</strong> Transactional data when you make a purchase (processed securely by third-party payment providers).</span></li>
+                    <li><span class="lang lang-hi"><strong>Communication Records:</strong> Messages, inquiries, aur feedback jo tum hamari website ya other communication channels ke through provide karte ho.</span><span class="lang lang-en"><strong>Communication Records:</strong> Messages, inquiries, and feedback you provide through our website or other communication channels.</span></li>
+                </ul>
+                <p><span class="lang lang-hi">Sab personal information accurate aur updated honi chahiye user dwara. Hum inaccurate ya outdated information se hone wale consequences ke liye responsible nahi hain.</span><span class="lang lang-en">All personal information must be accurate and updated by the user. We are not responsible for consequences arising from inaccurate or outdated information.</span></p>
+
+                <h3><span class="lang lang-hi">B. Information We Collect Automatically</span><span class="lang lang-en">B. Information We Collect Automatically</span></h3>
+                <p><span class="lang lang-hi">Jab tum hamari website visit karte ho ya Services use karte ho, hum automatically collect karte hain:</span><span class="lang lang-en">When you visit our website or use our Services, we automatically collect:</span></p>
+                <ul>
+                    <li><span class="lang lang-hi"><strong>Device and Usage Data:</strong> IP address, browser type, device details, operating system, aur language preferences.</span><span class="lang lang-en"><strong>Device and Usage Data:</strong> IP address, browser type, device details, operating system, and language preferences.</span></li>
+                    <li><span class="lang lang-hi"><strong>Analytics and Tracking Data:</strong> Pages visited, time spent on our website, referring URLs, aur other interaction data.</span><span class="lang lang-en"><strong>Analytics and Tracking Data:</strong> Pages visited, time spent on our website, referring URLs, and other interaction data.</span></li>
+                    <li><span class="lang lang-hi"><strong>App Usage Patterns:</strong> Features use kiye, time spent, aur app interactions.</span><span class="lang lang-en"><strong>App Usage Patterns:</strong> Features used, time spent, and app interactions.</span></li>
+                    <li><span class="lang lang-hi"><strong>Advertising and Rewarded Ad Data:</strong> Android aur iOS apps me Google AdMob ke through ad requests, ad views, rewarded ad completion events, device identifiers, advertising identifiers where available, IP address, approximate location inferred from IP address, app interactions, diagnostics, aur consent preferences collect ya process ho sakte hain.</span><span class="lang lang-en"><strong>Advertising and Rewarded Ad Data:</strong> In the Android and iOS apps, Google AdMob may collect or process ad requests, ad views, rewarded ad completion events, device identifiers, advertising identifiers where available, IP address, approximate location inferred from IP address, app interactions, diagnostics, and consent preferences.</span></li>
+                    <li><span class="lang lang-hi"><strong>Security Logs:</strong> Information jo fraud prevention aur security monitoring ke liye use hoti hai.</span><span class="lang lang-en"><strong>Security Logs:</strong> Information used for fraud prevention and security monitoring.</span></li>
+                </ul>
+
+                <h3><span class="lang lang-hi">C. Information from Third Parties</span><span class="lang lang-en">C. Information from Third Parties</span></h3>
+                <p><span class="lang lang-hi">Hum third-party sources se personal data collect nahi karte unless explicitly authorized by you.</span><span class="lang lang-en">We do not collect personal data from third-party sources unless explicitly authorized by you.</span></p>
+
+                <h2><span class="lang lang-hi">2. HOW WE USE YOUR INFORMATION</span><span class="lang lang-en">2. HOW WE USE YOUR INFORMATION</span></h2>
+
+                <p><span class="lang lang-hi">Hum tumhari information ko following lawful purposes ke liye process karte hain:</span><span class="lang lang-en">We process your information for the following lawful purposes:</span></p>
+                <ul>
+                    <li><span class="lang lang-hi"><strong>Service Delivery:</strong> Hamari Services provide, maintain, aur improve karna.</span><span class="lang lang-en"><strong>Service Delivery:</strong> Providing, maintaining, and improving our Services.</span></li>
+                    <li><span class="lang lang-hi"><strong>Account Management:</strong> User accounts create aur manage karna.</span><span class="lang lang-en"><strong>Account Management:</strong> Creating and managing user accounts.</span></li>
+                    <li><span class="lang lang-hi"><strong>Astrology Calculations:</strong> Personalized astrology forecasts, daily meters, aur life chapters provide karna.</span><span class="lang lang-en"><strong>Astrology Calculations:</strong> Providing personalized astrology forecasts, daily meters, and life chapters.</span></li>
+                    <li><span class="lang lang-hi"><strong>Model Training:</strong> Tumhare past events se model ko train karna accuracy improve karne ke liye.</span><span class="lang lang-en"><strong>Model Training:</strong> Training models using your past events to improve accuracy.</span></li>
+                    <li><span class="lang lang-hi"><strong>Customer Support:</strong> Inquiries aur requests ko respond karna.</span><span class="lang lang-en"><strong>Customer Support:</strong> Responding to inquiries and requests.</span></li>
+                    <li><span class="lang lang-hi"><strong>Communication:</strong> Service-related updates, notifications, aur marketing (if opted in) bhejna.</span><span class="lang lang-en"><strong>Communication:</strong> Sending service-related updates, notifications, and marketing (if opted in).</span></li>
+                    <li><span class="lang lang-hi"><strong>Transaction Processing:</strong> Orders, invoices, aur payments manage karna.</span><span class="lang lang-en"><strong>Transaction Processing:</strong> Managing orders, invoices, and payments.</span></li>
+                    <li><span class="lang lang-hi"><strong>Coin Wallet and Reward Processing:</strong> Coin balance maintain karna, questions ke liye coins debit karna, failed questions par eligible refunds process karna, rewarded ads verify karna, streak aur answer rewards credit karna, aur daily rewarded ad limits enforce karna.</span><span class="lang lang-en"><strong>Coin Wallet and Reward Processing:</strong> Maintaining coin balance, debiting coins for questions, processing eligible refunds for failed questions, verifying rewarded ads, crediting streak and answer rewards, and enforcing daily rewarded ad limits.</span></li>
+                    <li><span class="lang lang-hi"><strong>Advertising:</strong> Native Android aur iOS apps me optional rewarded ads show karna, ad delivery aur measurement support karna, frequency capping apply karna, aur ad fraud ya abuse prevent karna.</span><span class="lang lang-en"><strong>Advertising:</strong> Showing optional rewarded ads in the native Android and iOS apps, supporting ad delivery and measurement, applying frequency capping, and preventing ad fraud or abuse.</span></li>
+                    <li><span class="lang lang-hi"><strong>Security and Fraud Prevention:</strong> Unauthorized access, fraud, ya abuse detect aur prevent karna.</span><span class="lang lang-en"><strong>Security and Fraud Prevention:</strong> Detecting and preventing unauthorized access, fraud, or abuse.</span></li>
+                    <li><span class="lang lang-hi"><strong>Compliance with Legal Obligations:</strong> Regulatory requirements meet karna aur hamare terms of service enforce karna.</span><span class="lang lang-en"><strong>Compliance with Legal Obligations:</strong> Meeting regulatory requirements and enforcing our terms of service.</span></li>
+                </ul>
+
+                <h2><span class="lang lang-hi">3. SHARING YOUR INFORMATION</span><span class="lang lang-en">3. SHARING YOUR INFORMATION</span></h2>
+
+                <p><span class="lang lang-hi">Hum following cases me tumhara data share kar sakte hain:</span><span class="lang lang-en">We may share your data in the following cases:</span></p>
+                <ul>
+                    <li><span class="lang lang-hi"><strong>With Service Providers:</strong> Secure third-party vendors jo payment processing, cloud storage, analytics, advertising, fraud prevention, aur marketing handle karte hain.</span><span class="lang lang-en"><strong>With Service Providers:</strong> Secure third-party vendors handling payment processing, cloud storage, analytics, advertising, fraud prevention, and marketing.</span></li>
+                    <li><span class="lang lang-hi"><strong>With Google AdMob:</strong> Android aur iOS apps me rewarded ads provide karne ke liye hum Google AdMob use karte hain. Google ad serving, measurement, frequency capping, fraud prevention, aur personalized ya non-personalized ads ke liye data collect, receive, ya process kar sakta hai, applicable settings aur consent ke according. Google data kaise use karta hai iske liye <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener noreferrer nofollow" style="color: var(--primary);">Google's partner sites and apps policy</a> review karo.</span><span class="lang lang-en"><strong>With Google AdMob:</strong> We use Google AdMob to provide rewarded ads in the Android and iOS apps. Google may collect, receive, or process data for ad serving, measurement, frequency capping, fraud prevention, and personalized or non-personalized ads, depending on applicable settings and consent. To understand how Google uses data, review <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener noreferrer nofollow" style="color: var(--primary);">Google's partner sites and apps policy</a>.</span></li>
+                    <li><span class="lang lang-hi"><strong>For Legal Compliance:</strong> Jab law, regulation, ya government authority ke through required ho.</span><span class="lang lang-en"><strong>For Legal Compliance:</strong> When required by law, regulation, or government authority.</span></li>
+                    <li><span class="lang lang-hi"><strong>In Business Transactions:</strong> Merger, acquisition, ya business restructuring ke case me.</span><span class="lang lang-en"><strong>In Business Transactions:</strong> In the case of a merger, acquisition, or business restructuring.</span></li>
+                </ul>
+                <p><span class="lang lang-hi">Hum tumhari personal information ko third parties ko sell ya rent nahi karte.</span><span class="lang lang-en">We do not sell or rent your personal information to third parties.</span></p>
+
+                <h2><span class="lang lang-hi">4. COOKIES, AD IDENTIFIERS, AND TRACKING TECHNOLOGIES</span><span class="lang lang-en">4. COOKIES, AD IDENTIFIERS, AND TRACKING TECHNOLOGIES</span></h2>
+
+                <p><span class="lang lang-hi">Hum cookies, web beacons, aur similar technologies use karte hain user experience enhance karne, website traffic analyze karne, aur hamari Services improve karne ke liye. Tum apne browser settings ke through cookie preferences manage kar sakte ho.</span><span class="lang lang-en">We use cookies, web beacons, and similar technologies to enhance user experience, analyze website traffic, and improve our Services. You can manage cookie preferences through your browser settings.</span></p>
+                <p><span class="lang lang-hi">Native Android aur iOS apps me Google AdMob mobile ad identifiers, device identifiers, IP address, app interactions, ad interaction data, aur similar technologies use kar sakta hai ads serve karne, rewarded ad views verify karne, frequency capping, analytics, aur fraud prevention ke liye. Tum apne device settings ke through ad tracking, personalized ads, ya advertising identifier preferences manage kar sakte ho where available.</span><span class="lang lang-en">In the native Android and iOS apps, Google AdMob may use mobile ad identifiers, device identifiers, IP address, app interactions, ad interaction data, and similar technologies for ad serving, rewarded ad verification, frequency capping, analytics, and fraud prevention. Where available, you can manage ad tracking, personalized ads, or advertising identifier preferences through your device settings.</span></p>
+                <p><span class="lang lang-hi">Rewarded ad completion verify karne ke liye, hum Google AdMob server-side verification use karte hain. Is flow me Google hamare backend callback URL par user ID, custom session data, ad unit ID, reward item, reward amount, timestamp, aur transaction ID bhej sakta hai. Hum is data ko coins credit karne, duplicate rewards prevent karne, aur abuse detect karne ke liye use karte hain.</span><span class="lang lang-en">To verify rewarded ad completion, we use Google AdMob server-side verification. In this flow, Google may send our backend callback URL a user ID, custom session data, ad unit ID, reward item, reward amount, timestamp, and transaction ID. We use this data to credit coins, prevent duplicate rewards, and detect abuse.</span></p>
+
+                <h2><span class="lang lang-hi">5. SOCIAL MEDIA LOGINS</span><span class="lang lang-en">5. SOCIAL MEDIA LOGINS</span></h2>
+
+                <p><span class="lang lang-hi">Agar tum social media accounts use karke login choose karte ho, to hum platform ki privacy settings ke according limited profile information receive kar sakte hain. Tum respective social media account settings ke through access revoke kar sakte ho.</span><span class="lang lang-en">If you choose to log in using social media accounts, we may receive limited profile information as permitted by the platform's privacy settings. You can revoke access through the respective social media account settings.</span></p>
+
+                <h2><span class="lang lang-hi">6. DATA RETENTION</span><span class="lang lang-en">6. DATA RETENTION</span></h2>
+
+                <p><span class="lang lang-hi">Hum personal data ko sirf business aur legal purposes ke liye zaroori time tak retain karte hain. Agar tum deletion request karte ho, to hum tumhara data remove kar denge unless security, compliance, ya legitimate interests ke liye retain karna required ho.</span><span class="lang lang-en">We retain personal data only as long as necessary for business and legal purposes. If you request deletion, we will remove your data unless required to retain it for security, compliance, or legitimate interests.</span></p>
+
+                <h2><span class="lang lang-hi">7. DATA SECURITY MEASURES</span><span class="lang lang-en">7. DATA SECURITY MEASURES</span></h2>
+
+                <p><span class="lang lang-hi">Hum strict organizational, technical, aur administrative safeguards implement karte hain personal data ko unauthorized access, alteration, ya disclosure se protect karne ke liye. Lekin, koi bhi online service 100% secure nahi hai, aur hum absolute protection guarantee nahi kar sakte. Tum apne account credentials ki confidentiality maintain karne ke liye responsible ho.</span><span class="lang lang-en">We implement strict organizational, technical, and administrative safeguards to protect personal data from unauthorized access, alteration, or disclosure. However, no online service is 100% secure, and we cannot guarantee absolute protection. You are responsible for maintaining the confidentiality of your account credentials.</span></p>
+
+                <h2><span class="lang lang-hi">8. CHILDREN'S PRIVACY</span><span class="lang lang-en">8. CHILDREN'S PRIVACY</span></h2>
+
+                <p><span class="lang lang-hi">Hamari Services 18 se kam umar ke individuals ke liye intended nahi hain. Hum knowingly minors se data collect nahi karte. Agar hume aisi data ke baare me pata chale, to hum immediately delete kar denge.</span><span class="lang lang-en">Our Services are not intended for individuals under 18. We do not knowingly collect data from minors. If we become aware of such data, we will delete it promptly.</span></p>
+
+                <h2><span class="lang lang-hi">9. YOUR PRIVACY RIGHTS</span><span class="lang lang-en">9. YOUR PRIVACY RIGHTS</span></h2>
+
+                <p><span class="lang lang-hi">Tumhari location ke depending, tumhare paas applicable data protection laws ke under rights ho sakte hain, including:</span><span class="lang lang-en">Depending on your location, you may have rights under applicable data protection laws, including:</span></p>
+                <ul>
+                    <li><span class="lang lang-hi"><strong>Access & Portability:</strong> Apni personal data ki ek copy request kar sakte ho.</span><span class="lang lang-en"><strong>Access & Portability:</strong> Request a copy of your personal data.</span></li>
+                    <li><span class="lang lang-hi"><strong>Correction:</strong> Inaccurate information ko correct karne ke liye request kar sakte ho.</span><span class="lang lang-en"><strong>Correction:</strong> Request correction of inaccurate information.</span></li>
+                    <li><span class="lang lang-hi"><strong>Deletion:</strong> Apni personal data ko delete karne ke liye request kar sakte ho (subject to legal retention policies).</span><span class="lang lang-en"><strong>Deletion:</strong> Request deletion of your personal data (subject to legal retention policies).</span></li>
+                    <li><span class="lang lang-hi"><strong>Objection & Restriction:</strong> Data processing ko object kar sakte ho ya limited processing request kar sakte ho.</span><span class="lang lang-en"><strong>Objection & Restriction:</strong> Object to data processing or request limited processing.</span></li>
+                    <li><span class="lang lang-hi"><strong>Opt-Out of Marketing:</strong> Kisi bhi time promotional emails se unsubscribe kar sakte ho.</span><span class="lang lang-en"><strong>Opt-Out of Marketing:</strong> Unsubscribe from promotional emails at any time.</span></li>
+                </ul>
+                <p><span class="lang lang-hi">Apne rights exercise karne ke liye, hello@astrosync.in par contact karo. Requests applicable laws ke according process ki jayengi.</span><span class="lang lang-en">To exercise your rights, contact us at hello@astrosync.in. Requests will be processed in accordance with applicable laws.</span></p>
+
+                <h2><span class="lang lang-hi">10. THIRD-PARTY LINKS & INTEGRATIONS</span><span class="lang lang-en">10. THIRD-PARTY LINKS & INTEGRATIONS</span></h2>
+
+                <p><span class="lang lang-hi">Hamari website me third-party websites ya integrations ke links ho sakte hain. AstroSync unki privacy practices ke liye responsible nahi hai, aur users ko personal data provide karne se pehle un policies ko review karna chahiye.</span><span class="lang lang-en">Our website may contain links to third-party websites or integrations. AstroSync is not responsible for their privacy practices, and users should review those policies before providing personal data.</span></p>
+                <p><span class="lang lang-hi">Hamari Services me Google AdMob, app stores, authentication providers, cloud hosting, analytics, aur payment providers jaise third-party integrations ho sakte hain. In providers ki apni privacy policies aur controls apply ho sakte hain.</span><span class="lang lang-en">Our Services may include third-party integrations such as Google AdMob, app stores, authentication providers, cloud hosting, analytics, and payment providers. These providers may apply their own privacy policies and controls.</span></p>
+
+                <h2><span class="lang lang-hi">11. DO-NOT-TRACK FEATURES</span><span class="lang lang-en">11. DO-NOT-TRACK FEATURES</span></h2>
+
+                <p><span class="lang lang-hi">Hamari Services abhi browsers se "Do Not Track" signals ko respond nahi karti.</span><span class="lang lang-en">Our Services do not respond to "Do Not Track" signals from browsers at this time.</span></p>
+
+                <h2><span class="lang lang-hi">12. UPDATES TO THIS PRIVACY POLICY</span><span class="lang lang-en">12. UPDATES TO THIS PRIVACY POLICY</span></h2>
+
+                <p><span class="lang lang-hi">Hum is Privacy Policy ko periodically update kar sakte hain. Latest version hamesha hamari website par "Last Updated" date ke saath available hogi. Updates ke baad hamari Services ka continued use revised policy ki acceptance constitute karta hai.</span><span class="lang lang-en">We may update this Privacy Policy periodically. The latest version will always be available on our website with the "Last Updated" date. Continued use of our Services after updates constitutes acceptance of the revised policy.</span></p>
+
+                <h2><span class="lang lang-hi">13. CONTACT US</span><span class="lang lang-en">13. CONTACT US</span></h2>
+
+                <p><span class="lang lang-hi">Is Privacy Policy ke baare me kisi bhi questions ke liye, tum humse contact kar sakte ho:</span><span class="lang lang-en">For any questions about this Privacy Policy, you may contact us at:</span></p>
+                <ul>
+                    <li><span class="lang lang-hi">📧 Email: <a href="mailto:hello@astrosync.in" style="color: var(--primary);">hello@astrosync.in</a></span><span class="lang lang-en">📧 Email: <a href="mailto:hello@astrosync.in" style="color: var(--primary);">hello@astrosync.in</a></span></li>
+                    <li><span class="lang lang-hi">🌐 Website: <a href="https://astrosync.in" style="color: var(--primary);">astrosync.in</a></span><span class="lang lang-en">🌐 Website: <a href="https://astrosync.in" style="color: var(--primary);">astrosync.in</a></span></li>
+                </ul>
+
+                <h2><span class="lang lang-hi">14. DATA REVIEW, UPDATE, OR DELETION REQUESTS</span><span class="lang lang-en">14. DATA REVIEW, UPDATE, OR DELETION REQUESTS</span></h2>
+
+                <p><span class="lang lang-hi">Apni personal data ko review, update, ya delete karne ke liye, hello@astrosync.in par email karo. Hum applicable legal obligations ke according tumhari request process karenge.</span><span class="lang lang-en">To review, update, or delete your personal data, email us at hello@astrosync.in. We will process your request as per applicable legal obligations.</span></p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const titleByLang = {
+            hi: 'Privacy Policy | AstroSync',
+            en: 'Privacy Policy | AstroSync'
+        };
+
+        const langButtons = document.querySelectorAll('.lang-btn');
+
+        const setLanguage = (lang) => {
+            document.body.setAttribute('data-lang', lang);
+            document.documentElement.lang = lang === 'en' ? 'en' : 'hi';
+            if (titleByLang[lang]) {
+                document.title = titleByLang[lang];
+            }
+            langButtons.forEach((button) => {
+                const isActive = button.dataset.lang === lang;
+                button.classList.toggle('is-active', isActive);
+                button.setAttribute('aria-pressed', isActive ? 'true' : 'false');
+            });
+        };
+
+        langButtons.forEach((button) => {
+            button.addEventListener('click', () => {
+                setLanguage(button.dataset.lang);
+            });
+        });
+
+        setLanguage(document.body.getAttribute('data-lang') || 'hi');
+    </script>
+
+</body>
+</html>

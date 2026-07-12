@@ -1,0 +1,50 @@
+name: Deploy to S3
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ap-south-1
+
+      - name: Sync to S3
+        run: aws s3 sync . s3://astrosync-landing-website --delete --exclude ".git/*" --exclude ".github/*"
+
+      - name: Package for Amplify
+        run: zip -r amplify-deploy.zip . -x ".git/*" -x ".github/*" -x "amplify-deploy.zip"
+
+      - name: Create Amplify deployment
+        id: amplify_deploy
+        run: |
+          response=$(aws amplify create-deployment --app-id "${{ secrets.AMPLIFY_APP_ID }}" --branch-name main --output json)
+          echo "$response" > amplify-deploy.json
+          python - <<'PY'
+          import json
+          import os
+
+          with open("amplify-deploy.json", "r", encoding="utf-8") as handle:
+              data = json.load(handle)
+
+          with open(os.environ["GITHUB_OUTPUT"], "a", encoding="utf-8") as handle:
+              handle.write(f"upload_url={data['zipUploadUrl']}\n")
+              handle.write(f"job_id={data['jobId']}\n")
+          PY
+
+      - name: Upload Amplify bundle
+        run: |
+          curl -H "Content-Type: application/zip" --upload-file amplify-deploy.zip "${{ steps.amplify_deploy.outputs.upload_url }}"
+
+      - name: Start Amplify deployment
+        run: aws amplify start-deployment --app-id "${{ secrets.AMPLIFY_APP_ID }}" --branch-name main --job-id "${{ steps.amplify_deploy.outputs.job_id }}"
