@@ -1,0 +1,87 @@
+{
+  "_framework-DjPHiq1u.js": {
+    "file": "assets/framework-DjPHiq1u.js",
+    "name": "framework",
+    "imports": [
+      "_rolldown-runtime-S-ySWqyJ.js"
+    ]
+  },
+  "_gsap-BEsEDAKg.js": {
+    "file": "assets/gsap-BEsEDAKg.js",
+    "name": "gsap"
+  },
+  "_rolldown-runtime-S-ySWqyJ.js": {
+    "file": "assets/rolldown-runtime-S-ySWqyJ.js",
+    "name": "rolldown-runtime"
+  },
+  "app/dom-motion.tsx": {
+    "file": "assets/dom-motion-Cy837Ai6.js",
+    "name": "dom-motion",
+    "src": "app/dom-motion.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-S-ySWqyJ.js",
+      "_gsap-BEsEDAKg.js",
+      "_framework-DjPHiq1u.js"
+    ]
+  },
+  "app/living-kundli.tsx": {
+    "file": "assets/living-kundli-DibHJ7vp.js",
+    "name": "living-kundli",
+    "src": "app/living-kundli.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-S-ySWqyJ.js",
+      "virtual:vinext-app-browser-entry",
+      "_gsap-BEsEDAKg.js",
+      "_framework-DjPHiq1u.js"
+    ],
+    "dynamicImports": [
+      "node_modules/three/build/three.webgpu.js"
+    ]
+  },
+  "node_modules/lucide-react/dist/esm/Icon.mjs": {
+    "file": "assets/Icon-DxI4gEEl.js",
+    "name": "Icon",
+    "src": "node_modules/lucide-react/dist/esm/Icon.mjs",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-S-ySWqyJ.js",
+      "_framework-DjPHiq1u.js"
+    ]
+  },
+  "node_modules/three/build/three.webgpu.js": {
+    "file": "assets/three.webgpu-CaUVAK1G.js",
+    "name": "three.webgpu",
+    "src": "node_modules/three/build/three.webgpu.js",
+    "isDynamicEntry": true
+  },
+  "node_modules/vinext/dist/shims/layout-segment-context.js": {
+    "file": "assets/layout-segment-context-DLZc0cT6.js",
+    "name": "layout-segment-context",
+    "src": "node_modules/vinext/dist/shims/layout-segment-context.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-S-ySWqyJ.js",
+      "virtual:vinext-app-browser-entry",
+      "_framework-DjPHiq1u.js"
+    ]
+  },
+  "virtual:vinext-app-browser-entry": {
+    "file": "assets/index-CpswTYO7.js",
+    "name": "index",
+    "src": "virtual:vinext-app-browser-entry",
+    "isEntry": true,
+    "imports": [
+      "_rolldown-runtime-S-ySWqyJ.js",
+      "_framework-DjPHiq1u.js"
+    ],
+    "dynamicImports": [
+      "app/dom-motion.tsx",
+      "node_modules/vinext/dist/shims/layout-segment-context.js",
+      "node_modules/lucide-react/dist/esm/Icon.mjs",
+      "virtual:vinext-app-browser-entry",
+      "app/living-kundli.tsx"
+    ]
+  }
+}
