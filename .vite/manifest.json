@@ -6,28 +6,34 @@
       "_rolldown-runtime-S-ySWqyJ.js"
     ]
   },
+  "_gsap-BEsEDAKg.js": {
+    "file": "assets/gsap-BEsEDAKg.js",
+    "name": "gsap"
+  },
   "_rolldown-runtime-S-ySWqyJ.js": {
     "file": "assets/rolldown-runtime-S-ySWqyJ.js",
     "name": "rolldown-runtime"
   },
   "app/dom-motion.tsx": {
-    "file": "assets/dom-motion-G_UvecI4.js",
+    "file": "assets/dom-motion-Cy837Ai6.js",
     "name": "dom-motion",
     "src": "app/dom-motion.tsx",
     "isDynamicEntry": true,
     "imports": [
       "_rolldown-runtime-S-ySWqyJ.js",
+      "_gsap-BEsEDAKg.js",
       "_framework-DjPHiq1u.js"
     ]
   },
   "app/living-kundli.tsx": {
-    "file": "assets/living-kundli-BbfjicE9.js",
+    "file": "assets/living-kundli-DibHJ7vp.js",
     "name": "living-kundli",
     "src": "app/living-kundli.tsx",
     "isDynamicEntry": true,
     "imports": [
       "_rolldown-runtime-S-ySWqyJ.js",
       "virtual:vinext-app-browser-entry",
+      "_gsap-BEsEDAKg.js",
       "_framework-DjPHiq1u.js"
     ],
     "dynamicImports": [
@@ -35,7 +41,7 @@
     ]
   },
   "node_modules/lucide-react/dist/esm/Icon.mjs": {
-    "file": "assets/Icon-02H2h1EO.js",
+    "file": "assets/Icon-DxI4gEEl.js",
     "name": "Icon",
     "src": "node_modules/lucide-react/dist/esm/Icon.mjs",
     "isDynamicEntry": true,
@@ -45,13 +51,13 @@
     ]
   },
   "node_modules/three/build/three.webgpu.js": {
-    "file": "assets/three.webgpu-B_z6SIuq.js",
+    "file": "assets/three.webgpu-CaUVAK1G.js",
     "name": "three.webgpu",
     "src": "node_modules/three/build/three.webgpu.js",
     "isDynamicEntry": true
   },
   "node_modules/vinext/dist/shims/layout-segment-context.js": {
-    "file": "assets/layout-segment-context-DRe3mQNO.js",
+    "file": "assets/layout-segment-context-DLZc0cT6.js",
     "name": "layout-segment-context",
     "src": "node_modules/vinext/dist/shims/layout-segment-context.js",
     "isDynamicEntry": true,
@@ -62,7 +68,7 @@
     ]
   },
   "virtual:vinext-app-browser-entry": {
-    "file": "assets/index-D7yDzhA-.js",
+    "file": "assets/index-CpswTYO7.js",
     "name": "index",
     "src": "virtual:vinext-app-browser-entry",
     "isEntry": true,
