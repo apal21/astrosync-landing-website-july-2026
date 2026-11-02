@@ -2,6 +2,22 @@
 
 Static production website for [astrosync.in](https://astrosync.in).
 
+## Local Preview
+
+No build step or package installation is required:
+
+```sh
+python3 -m http.server 4173 --bind 127.0.0.1
+```
+
+Open `http://127.0.0.1:4173`. Local preview does not send Google Analytics events.
+The homepage uses self-hosted Fraunces and Space Grotesk fonts, official store
+badges, and app screenshots from the October 2026 store assets. Font licenses are
+included in `assets/fonts`.
+
+The App Store and Google Play links are ordinary links and work without JavaScript.
+Do not push preview changes to `main` until approved: a push deploys automatically.
+
 ## Stable public URLs
 
 - `https://astrosync.in/privacy-policy.html`
