@@ -90,14 +90,25 @@ h3 { font-size: 26px; line-height: 1.25; font-weight: 700; }
 .focus-section .quiet-note { color: #425c4d; font-size: 13px; margin-top: 4px; }
 .focus-screens { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; align-items: start; }
 .focus-screens figure:last-child { padding-top: 52px; }
-.app-screen { width: 100%; border: 1px solid #d7dce3; border-radius: 22px; }
+.app-screen { width: 100%; height: auto; border-radius: 20px; }
 figcaption { color: #425c4d; font-size: 12px; line-height: 1.5; margin-top: 14px; text-align: center; }
 .section-intro { max-width: 620px; }
 .section-intro p { margin-top: 20px; }
-.feature-grid { margin-top: 44px; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 52px; }
+.feature-grid { margin-top: 44px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 72px; }
 .feature { min-width: 0; }
-.feature p { margin-top: 14px; min-height: 158px; font-size: 15px; }
-.feature > img { max-width: 260px; margin: 24px auto 0; }
+.feature p { margin-top: 14px; min-height: 100px; font-size: 15px; }
+.feature > .app-screen { max-width: 260px; margin: 24px auto 0; }
+.astrohub-section { background: #f7f8fa; }
+.astrohub-layout { display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 64px; }
+.astrohub-copy > p { margin-top: 20px; max-width: 470px; }
+.hub-tools { margin: 28px 0 0; }
+.hub-tools > div { padding: 16px 0; border-bottom: 1px solid var(--line); }
+.hub-tools > div:first-child { padding-top: 0; }
+.hub-tools dt { font-size: 15px; line-height: 1.5; font-weight: 600; }
+.hub-tools dd { margin: 5px 0 0; color: var(--muted); font-size: 14px; line-height: 1.65; }
+.astrohub-screens { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; align-items: start; }
+.astrohub-screens figure:last-child { padding-top: 52px; }
+.astrohub-screens figcaption { color: var(--muted); }
 .together-section { border-block: 1px solid var(--line); }
 .together-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 96px; align-items: start; }
 .together-layout p { margin-top: 20px; max-width: 450px; }
@@ -129,7 +140,9 @@ figcaption { color: #425c4d; font-size: 12px; line-height: 1.5; margin-top: 14px
   .focus-layout { gap: 36px; }
   .focus-screens { gap: 14px; }
   .feature-grid { gap: 26px; }
-  .feature p { min-height: 206px; }
+  .feature p { min-height: 132px; }
+  .astrohub-layout { gap: 36px; }
+  .astrohub-screens { gap: 14px; }
   .together-layout { gap: 48px; }
   .questions-layout { gap: 40px; }
   h2 { font-size: 36px; }
@@ -152,16 +165,19 @@ figcaption { color: #425c4d; font-size: 12px; line-height: 1.5; margin-top: 14px
   .access-note { font-size: 11px; margin-top: 3px; }
   .hero-glimpse { height: 145px; gap: 17px; margin-top: 28px; width: calc(100% - 40px); }
   .hero-glimpse img { width: 100px; border-radius: 12px 12px 0 0; }
+  .app-screen { border-radius: 12px; }
   .hero-glimpse img:first-child, .hero-glimpse img:last-child { margin-top: 14px; }
   .section-band { padding-block: 56px; }
   h2 { font-size: 34px; }
-  .focus-layout, .together-layout, .questions-layout { grid-template-columns: 1fr; gap: 36px; }
+  .focus-layout, .together-layout, .questions-layout, .astrohub-layout { grid-template-columns: 1fr; gap: 36px; }
   .focus-copy > p { max-width: none; }
   .focus-screens { max-width: 420px; width: 100%; margin: 0 auto; gap: 18px; }
   .focus-screens figure:last-child { padding-top: 32px; }
   .feature-grid { grid-template-columns: 1fr; gap: 56px; margin-top: 32px; }
   .feature p { min-height: 0; max-width: 440px; }
-  .feature > img { max-width: 260px; }
+  .feature > .app-screen { max-width: 260px; }
+  .astrohub-screens { max-width: 420px; width: 100%; margin: 0 auto; gap: 18px; }
+  .astrohub-screens figure:last-child { padding-top: 32px; }
   .together-layout { gap: 40px; }
   .report-feature h3 { font-size: 28px; }
   .questions-layout { gap: 32px; }
